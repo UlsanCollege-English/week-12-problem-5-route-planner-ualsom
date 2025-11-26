@@ -94,7 +94,7 @@ def test_unweighted_larger_graph():
     path, cost = route_planner(graph, "S", "F", weighted=False)
     assert path[0] == "S"
     assert path[-1] == "F"
-    assert cost == 3  # S -> A/B -> C/D -> E -> F is 4 nodes => 3 edges
+    assert cost == 4  # S -> A/B -> C/D -> E -> F is 5 nodes => 4 edges
 
 
 def test_weighted_choose_correct_shortest():
